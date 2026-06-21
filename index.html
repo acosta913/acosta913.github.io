@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brian Acosta — Desarrollador Full Stack Senior | React, Angular, .NET, Java, AWS</title>
+<meta name="description" content="Desarrollador Full Stack Senior en Bogotá con 13 años de experiencia en banca y software empresarial. React, Angular, C#/.NET, Java, Node.js y AWS. Disponible para roles presenciales, híbridos y remotos.">
+<meta name="keywords" content="desarrollador full stack, senior developer, React, Angular, .NET, C#, Java, Node.js, AWS, Bogotá, Colombia, remoto">
+<meta name="author" content="Brian Acosta">
+<meta property="og:title" content="Brian Acosta — Desarrollador Full Stack Senior">
+<meta property="og:description" content="13 años construyendo software bancario y empresarial. React · Angular · .NET · Java · Node.js · AWS.">
+<meta property="og:type" content="profile">
+<meta property="og:locale" content="es_CO">
+<meta property="og:url" content="https://acosta913.github.io">
+<!-- Sube una imagen 1200x630px llamada og-preview.png junto al index.html para el preview al compartir el enlace -->
+<meta property="og:image" content="https://acosta913.github.io/og-preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0D1521">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230D1521'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='17' font-weight='700' fill='%23E8A33D' text-anchor='middle'%3EBA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Archivo:wdth,wght@62..125,500..900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Brian Acosta",
+  "jobTitle": "Senior Full Stack Developer",
+  "email": "mailto:acostapaez913@gmail.com",
+  "telephone": "+57 321 755 5612",
+  "address": { "@type": "PostalAddress", "addressLocality": "Bogotá", "addressCountry": "CO" },
+  "sameAs": ["https://linkedin.com/in/brian-acosta", "https://github.com/acosta913"],
+  "url": "https://acosta913.github.io",
+  "knowsAbout": ["React", "Angular", "C#", ".NET", "Java", "Node.js", "AWS", "Azure", "TypeScript", "SQL Server", "PostgreSQL", "MongoDB", "Microservices", "Scrum"]
+}
+</script>
+<style>
+  :root{
+    --tinta:#0D1521;          /* fondo base */
+    --panel:#131F2E;          /* paneles */
+    --linea:#22344A;          /* bordes */
+    --papel:#F1EDE3;          /* texto principal */
+    --niebla:#9DAEC2;         /* texto secundario */
+    --ambar:#E8A33D;          /* acento principal */
+    --acero:#7FA8D4;          /* acento secundario */
+    --display:'Archivo',sans-serif;
+    --body:'IBM Plex Sans',sans-serif;
+    --mono:'IBM Plex Mono',monospace;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto}
+    *,*::before,*::after{animation:none!important;transition:none!important}
+  }
+  body{background:var(--tinta);color:var(--papel);font-family:var(--body);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  a{color:var(--acero);text-decoration:none}
+  a:hover{color:var(--ambar)}
+  :focus-visible{outline:2px solid var(--ambar);outline-offset:3px;border-radius:2px}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+  .mono{font-family:var(--mono)}
+
+  /* ---------- NAV ---------- */
+  nav{position:sticky;top:0;z-index:50;background:rgba(13,21,33,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--linea)}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:62px}
+  .brand{font-family:var(--mono);font-size:.95rem;color:var(--papel);letter-spacing:.02em}
+  .brand b{color:var(--ambar);font-weight:500}
+  .nav-right{display:flex;align-items:center;gap:18px}
+  .nav-links{display:flex;gap:18px;font-size:.92rem}
+  .nav-links a{color:var(--niebla)}
+  .nav-links a:hover{color:var(--papel)}
+  .lang{display:flex;border:1px solid var(--linea);border-radius:6px;overflow:hidden}
+  .lang button{background:none;border:0;color:var(--niebla);font-family:var(--mono);font-size:.8rem;padding:6px 12px;cursor:pointer}
+  .lang button.on{background:var(--ambar);color:var(--tinta);font-weight:500}
+  @media(max-width:720px){.nav-links{display:none}}
+
+  /* ---------- HERO ---------- */
+  header{padding:84px 0 56px;border-bottom:1px solid var(--linea)}
+  .eyebrow{font-family:var(--mono);font-size:.85rem;color:var(--ambar);letter-spacing:.06em;display:flex;align-items:center;gap:10px;margin-bottom:26px}
+  .dot{width:9px;height:9px;border-radius:50%;background:#5BD89A;box-shadow:0 0 0 4px rgba(91,216,154,.15);display:inline-block}
+  h1{font-family:var(--display);font-variation-settings:'wdth' 112,'wght' 800;font-size:clamp(2.4rem,6vw,4.3rem);line-height:1.04;letter-spacing:-.015em;max-width:18ch}
+  h1 .amber{color:var(--ambar)}
+  .hero-sub{margin-top:26px;max-width:62ch;color:var(--niebla);font-size:1.08rem}
+  .hero-stack{margin-top:22px;font-family:var(--mono);font-size:.88rem;color:var(--acero)}
+  .cta-row{margin-top:36px;display:flex;flex-wrap:wrap;gap:14px}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:8px;font-weight:600;font-size:.95rem;border:1px solid var(--linea);color:var(--papel);transition:transform .15s ease,border-color .15s ease}
+  .btn:hover{transform:translateY(-2px);color:var(--papel)}
+  .btn-amber{background:var(--ambar);color:#1A1205;border-color:var(--ambar)}
+  .btn-amber:hover{color:#1A1205;border-color:var(--ambar)}
+  .btn-ghost:hover{border-color:var(--acero)}
+
+  /* ---------- TIMELINE (firma) ---------- */
+  .timeline-sec{padding:60px 0;border-bottom:1px solid var(--linea)}
+  .sec-label{font-family:var(--mono);font-size:.8rem;color:var(--ambar);letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px}
+  h2{font-family:var(--display);font-variation-settings:'wdth' 105,'wght' 700;font-size:clamp(1.5rem,3vw,2.1rem);letter-spacing:-.01em;margin-bottom:8px}
+  .sec-sub{color:var(--niebla);max-width:60ch;margin-bottom:34px}
+  .track{display:flex;width:100%;height:64px;border-radius:10px;overflow:hidden;border:1px solid var(--linea)}
+  .seg{position:relative;cursor:pointer;display:flex;align-items:flex-end;padding:8px 10px;transition:filter .15s ease;min-width:0}
+  .seg:hover,.seg.active{filter:brightness(1.35)}
+  .seg span{font-family:var(--mono);font-size:.72rem;color:rgba(241,237,227,.85);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .years{display:flex;justify-content:space-between;font-family:var(--mono);font-size:.75rem;color:var(--niebla);margin-top:8px}
+  .seg-detail{margin-top:26px;background:var(--panel);border:1px solid var(--linea);border-radius:10px;padding:22px 24px;min-height:96px}
+  .seg-detail h3{font-size:1.05rem;margin-bottom:4px}
+  .seg-detail .meta{font-family:var(--mono);font-size:.8rem;color:var(--ambar);margin-bottom:10px}
+  .seg-detail p{color:var(--niebla);font-size:.95rem}
+
+  /* ---------- STACK ---------- */
+  .stack-sec{padding:60px 0;border-bottom:1px solid var(--linea)}
+  .stack-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
+  .stack-card{background:var(--panel);border:1px solid var(--linea);border-radius:10px;padding:20px 22px}
+  .stack-card h3{font-family:var(--mono);font-size:.82rem;color:var(--acero);letter-spacing:.08em;text-transform:uppercase;margin-bottom:14px;font-weight:500}
+  .tags{display:flex;flex-wrap:wrap;gap:8px}
+  .tag{font-family:var(--mono);font-size:.8rem;color:var(--papel);background:rgba(127,168,212,.08);border:1px solid var(--linea);border-radius:6px;padding:4px 10px}
+
+  /* ---------- EXPERIENCIA ---------- */
+  .exp-sec{padding:60px 0;border-bottom:1px solid var(--linea)}
+  .job{display:grid;grid-template-columns:190px 1fr;gap:26px;padding:30px 0;border-top:1px solid var(--linea)}
+  .job:first-of-type{border-top:0}
+  .job-when{font-family:var(--mono);font-size:.84rem;color:var(--niebla);padding-top:4px}
+  .job h3{font-size:1.15rem;margin-bottom:2px}
+  .job .co{color:var(--ambar);font-weight:600}
+  .job .stack-line{font-family:var(--mono);font-size:.78rem;color:var(--acero);margin:6px 0 12px}
+  .job ul{list-style:none}
+  .job li{position:relative;padding-left:20px;color:var(--niebla);font-size:.95rem;margin-bottom:8px}
+  .job li::before{content:"";position:absolute;left:0;top:.55em;width:8px;height:2px;background:var(--ambar)}
+  @media(max-width:720px){.job{grid-template-columns:1fr;gap:8px}}
+
+  /* ---------- PROYECTOS ---------- */
+  .proj-sec{padding:60px 0;border-bottom:1px solid var(--linea)}
+  .repo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
+  .repo{background:var(--panel);border:1px solid var(--linea);border-radius:10px;padding:20px 22px;display:flex;flex-direction:column;gap:10px;transition:transform .15s ease,border-color .15s ease}
+  a.repo:hover{transform:translateY(-3px);border-color:var(--acero)}
+  .repo .lang-row .lang-dot{flex:none}
+  .repo h3{font-family:var(--mono);font-size:.95rem;color:var(--papel);font-weight:500}
+  .repo p{color:var(--niebla);font-size:.88rem;flex:1}
+  .repo .lang-row{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:.76rem;color:var(--acero);flex-wrap:wrap}
+  .repo .lang-dot{width:10px;height:10px;border-radius:50%;background:var(--ambar)}
+  .repo-note{margin-top:20px;font-size:.85rem;color:var(--niebla);font-family:var(--mono)}
+
+  /* ---------- CONTACTO ---------- */
+  .contact-sec{padding:80px 0 60px;text-align:center}
+  .contact-sec h2{font-size:clamp(1.9rem,4vw,2.8rem)}
+  .contact-sec p{color:var(--niebla);max-width:52ch;margin:14px auto 32px}
+  .contact-links{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
+  footer{border-top:1px solid var(--linea);padding:26px 0;text-align:center;font-family:var(--mono);font-size:.78rem;color:var(--niebla)}
+
+  .reveal{opacity:0;transform:translateY(16px);transition:opacity .5s ease,transform .5s ease}
+  .reveal.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-in">
+    <span class="brand">brian.acosta<b>@dev</b></span>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="#trayectoria" data-i18n="nav_career">Trayectoria</a>
+        <a href="#stack" data-i18n="nav_stack">Stack</a>
+        <a href="#experiencia" data-i18n="nav_exp">Experiencia</a>
+        <a href="#proyectos" data-i18n="nav_proj">Proyectos</a>
+        <a href="#contacto" data-i18n="nav_contact">Contacto</a>
+      </div>
+      <div class="lang" role="group" aria-label="Idioma / Language">
+        <button id="btn-es" class="on" onclick="setLang('es')">ES</button>
+        <button id="btn-en" onclick="setLang('en')">EN</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap">
+    <p class="eyebrow"><span class="dot" aria-hidden="true"></span><span data-i18n="hero_eyebrow">Bogotá, Colombia · Disponible para presencial, híbrido o remoto</span></p>
+    <h1 data-i18n-html="hero_title">Software bancario y empresarial, <span class="amber">en producción desde 2013.</span></h1>
+    <p class="hero-sub" data-i18n="hero_sub">Soy Brian Acosta, desarrollador Full Stack Senior. Llevo 13 años trabajando en equipo para convertir historias de usuario en sistemas que operan a diario en bancos, software factories y empresas de producto: del front-end en React y Angular al back-end en C#, Java y Node.js, desplegado en AWS.</p>
+    <p class="hero-stack">React · Angular · TypeScript · C# / .NET · Java · Node.js · AWS · SQL Server · PostgreSQL · MongoDB · Cursor · Copilot · Claude</p>
+    <div class="cta-row">
+      <a class="btn btn-amber" href="mailto:acostapaez913@gmail.com" data-i18n="cta_email">Escríbeme</a>
+      <a class="btn btn-ghost" href="https://linkedin.com/in/brian-acosta" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn btn-ghost" href="https://github.com/acosta913" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn btn-ghost" href="CV-Brian-Acosta-ATS.pdf" download data-i18n="cta_cv">Descargar CV</a>
+    </div>
+  </div>
+</header>
+
+<section class="timeline-sec" id="trayectoria">
+  <div class="wrap reveal">
+    <p class="sec-label" data-i18n="tl_label">2013 — 2026</p>
+    <h2 data-i18n="tl_title">Trece años en una sola línea</h2>
+    <p class="sec-sub" data-i18n="tl_sub">Cada bloque es una empresa real. Tócalo para ver qué construí ahí. Sin huecos laborales: de mantener sistemas legacy en 2013 a desplegar microservicios bancarios en la nube.</p>
+    <div class="track" id="track" role="tablist" aria-label="Línea de carrera"></div>
+    <div class="years"><span>2013</span><span>2016</span><span>2019</span><span>2022</span><span>2026</span></div>
+    <div class="seg-detail" id="seg-detail" role="tabpanel">
+      <h3 id="sd-title"></h3>
+      <p class="meta mono" id="sd-meta"></p>
+      <p id="sd-desc"></p>
+    </div>
+  </div>
+</section>
+
+<section class="stack-sec" id="stack">
+  <div class="wrap reveal">
+    <p class="sec-label">Stack</p>
+    <h2 data-i18n="st_title">Herramientas con kilometraje real</h2>
+    <p class="sec-sub" data-i18n="st_sub">Nada de barras de progreso: cada tecnología listada aquí está respaldada por años de uso en proyectos productivos.</p>
+    <div class="stack-grid">
+      <div class="stack-card"><h3>Front-end</h3><div class="tags"><span class="tag">React.js</span><span class="tag">Angular</span><span class="tag">TypeScript</span><span class="tag">JavaScript ES6+</span><span class="tag">HTML5 / CSS3</span><span class="tag">Zustand</span><span class="tag">Formik</span><span class="tag">Microfrontends · Module Federation</span></div></div>
+      <div class="stack-card"><h3>Back-end</h3><div class="tags"><span class="tag">C# / .NET Core</span><span class="tag">Java</span><span class="tag">Node.js</span><span class="tag">APIs RESTful</span><span class="tag">Worker Services</span><span class="tag">Microservicios</span></div></div>
+      <div class="stack-card"><h3>Cloud & DevOps</h3><div class="tags"><span class="tag">AWS ECS / EKS</span><span class="tag">Lambda</span><span class="tag">S3 · SQS</span><span class="tag">API Gateway</span><span class="tag">EC2 · RDS</span><span class="tag">Azure (dev)</span><span class="tag">Git / GitHub</span></div></div>
+      <div class="stack-card"><h3 data-i18n="st_db">Datos</h3><div class="tags"><span class="tag">SQL Server</span><span class="tag">MySQL</span><span class="tag">PostgreSQL</span><span class="tag">MongoDB</span><span class="tag">Stored Procedures</span></div></div>
+      <div class="stack-card"><h3 data-i18n="st_quality">Calidad & Seguridad</h3><div class="tags"><span class="tag">Jest · Vitest</span><span class="tag">JUnit</span><span class="tag">SonarCloud</span><span class="tag">Code Review</span><span class="tag">Auth0 · JWT</span></div></div>
+      <div class="stack-card"><h3 data-i18n="st_ai">IA aplicada al desarrollo</h3><div class="tags"><span class="tag">Cursor</span><span class="tag">GitHub Copilot</span><span class="tag">Claude</span><span class="tag" data-i18n="st_ai_tag">Desarrollo asistido por IA</span></div></div>
+      <div class="stack-card"><h3 data-i18n="st_method">Metodologías</h3><div class="tags"><span class="tag">Scrum</span><span class="tag">SOLID</span><span class="tag">POO</span><span class="tag" data-i18n="st_patterns">Patrones de diseño</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="exp-sec" id="experiencia">
+  <div class="wrap reveal">
+    <p class="sec-label" data-i18n="ex_label">Experiencia</p>
+    <h2 data-i18n="ex_title">Dónde y qué he construido</h2>
+    <div id="jobs"></div>
+  </div>
+</section>
+
+<section class="proj-sec" id="proyectos">
+  <div class="wrap reveal">
+    <p class="sec-label" data-i18n="pr_label">Proyectos</p>
+    <h2 data-i18n="pr_title">Trabajo seleccionado</h2>
+    <p class="sec-sub" data-i18n="pr_sub">Una muestra de lo que he construido. Por confidencialidad bancaria y corporativa, describo el alcance y el stack sin exponer código propietario.</p>
+    <div class="repo-grid" id="repos"></div>
+    <p class="repo-note" id="repo-note"></p>
+  </div>
+</section>
+
+<section class="contact-sec" id="contacto">
+  <div class="wrap reveal">
+    <h2 data-i18n="ct_title">¿Tu equipo necesita un full stack que ya pasó por banca?</h2>
+    <p data-i18n="ct_sub">Respondo rápido. Cuéntame del rol, el stack y el reto, y te digo con honestidad si soy la persona indicada.</p>
+    <div class="contact-links">
+      <a class="btn btn-amber" href="mailto:acostapaez913@gmail.com">acostapaez913@gmail.com</a>
+      <a class="btn btn-ghost" href="tel:+573217555612">+57 321 755 5612</a>
+      <a class="btn btn-ghost" href="https://linkedin.com/in/brian-acosta" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span data-i18n="ft">Brian Acosta · Bogotá, Colombia · Hecho a mano, sin plantillas.</span>
+  <span id="year-line" style="display:block;margin-top:6px;opacity:.7"></span>
+</footer>
+
+<script>
+/* ============ DATOS (editar aquí) ============ */
+const JOBS = [
+  {
+    co:"CG Software Factory Ltda", from:2013.1, to:2016.7, color:"#27405C",
+    role:{es:"Desarrollador Full Stack",en:"Full Stack Developer"},
+    when:{es:"Feb 2013 – Sep 2016 · Bogotá",en:"Feb 2013 – Sep 2016 · Bogotá"},
+    stack:"C# · Visual Basic · ASP Classic · AngularJS · SQL Server",
+    bullets:{
+      es:["Automaticé procesos internos de clientes corporativos desarrollando funcionalidades a partir de historias de usuario.","Mantuve y evolucioné una aplicación legacy en ASP Classic integrando nuevos requerimientos del negocio.","Desarrollé servicios RESTful en C# con autenticación JWT y administré bases de datos SQL Server."],
+      en:["Automated internal processes for corporate clients by building features from user stories.","Maintained and evolved a legacy ASP Classic application, integrating new business requirements.","Built RESTful services in C# with JWT authentication and managed SQL Server databases."]
+    },
+    tl:{es:"Mis primeros 3 años y medio: sistemas legacy, SQL Server a fondo y la base de mi disciplina de código.",en:"My first 3.5 years: legacy systems, deep SQL Server work, and the foundation of my code discipline."}
+  },
+  {
+    co:"Control Box Corp", from:2016.7, to:2017.95, color:"#2E5170",
+    role:{es:"Desarrollador Full Stack",en:"Full Stack Developer"},
+    when:{es:"Sep 2016 – Dic 2017 · Bogotá",en:"Sep 2016 – Dec 2017 · Bogotá"},
+    stack:"C# · .NET Core · Angular · Visual Basic · SQL Server",
+    bullets:{
+      es:["Integré el software de la compañía con aplicaciones externas de clientes mediante servicios RESTful en .NET Core.","Construí Windows Services en .NET para procesos automatizados críticos del sistema empresarial.","Administré SQL Server: procedimientos almacenados, funciones, triggers y optimización de consultas."],
+      en:["Integrated the company's software with external client applications through RESTful services in .NET Core.","Built Windows Services in .NET for business-critical automated processes.","Managed SQL Server: stored procedures, functions, triggers and query optimization."]
+    },
+    tl:{es:"Integraciones con terceros y servicios de Windows para procesos críticos: aquí aprendí a que nada se caiga.",en:"Third-party integrations and Windows services for critical processes: here I learned to keep things from breaking."}
+  },
+  {
+    co:"Zenderbox", from:2017.95, to:2022.2, color:"#3A6489",
+    role:{es:"Desarrollador Full Stack",en:"Full Stack Developer"},
+    when:{es:"Dic 2017 – Mar 2022 · Bogotá",en:"Dec 2017 – Mar 2022 · Bogotá"},
+    stack:"C# · .NET Core · Java · React.js · Angular · AWS (EC2, RDS, S3) · SQL Server",
+    bullets:{
+      es:["Desarrollé y mantuve aplicaciones internas durante más de 4 años, con soporte continuo a producción.","Diseñé APIs en C# y Java con Auth0/JWT y construí interfaces en React.js y Angular.","Desarrollé servicios en segundo plano con Worker Services en .NET Core 3.0 para procesos de larga duración.","Desplegué soluciones en AWS: .NET sobre EC2 con RDS, y Java con EC2 y estáticos en S3."],
+      en:["Developed and maintained internal applications for over 4 years, with continuous production support.","Designed APIs in C# and Java with Auth0/JWT and built interfaces in React.js and Angular.","Developed background services with Worker Services in .NET Core 3.0 for long-running processes.","Deployed solutions on AWS: .NET on EC2 with RDS, and Java on EC2 with static assets on S3."]
+    },
+    tl:{es:"Cuatro años largos: el salto a React, a Java y a la nube de AWS. De desarrollador a full stack completo.",en:"Four long years: the jump to React, Java and the AWS cloud. From developer to true full stack."}
+  },
+  {
+    co:"Banco de Bogotá", from:2022.2, to:2025.05, color:"#C2832F",
+    role:{es:"Desarrollador Full Stack",en:"Full Stack Developer"},
+    when:{es:"Mar 2022 – Ene 2025 · Bogotá",en:"Mar 2022 – Jan 2025 · Bogotá"},
+    stack:"Java · Node.js · React.js · Angular (Module Federation) · AWS (ECS, EKS, Lambda, SQS) · MySQL · PostgreSQL · SonarCloud · GitHub Copilot · Claude · Cursor",
+    bullets:{
+      es:["Formé parte del equipo que construyó el módulo de diferido de cuotas de tarjeta de crédito, usado por miles de clientes, disponible en la app móvil (vía integración) y en un módulo web expuesto al cliente externo, bajo la seguridad definida por el banco.","Contribuí al módulo de retención de clientes de tarjeta de crédito, integrado con los sistemas de ofertas del banco para reducir la cancelación de productos.","Implementé junto al equipo una arquitectura de microfrontends (MFE) en Angular con Module Federation para una aplicación interna, permitiendo desarrollar y desplegar módulos de forma independiente entre equipos.","Desarrollé microservicios en AWS (ECS, EKS, Lambda, SQS, API Gateway) junto al equipo, para mejorar y automatizar procesos internos del banco.","Trabajé bajo metodología Scrum participando en las ceremonias del equipo; desarrollé APIs en Java y Node.js cumpliendo el compliance financiero e integré SonarCloud como quality gate con JUnit y Jest.","Impulsé el uso de asistentes de IA (GitHub Copilot, Claude y Cursor) en el equipo para acelerar el desarrollo y las pruebas en un entorno bancario regulado, validando el código contra los estándares de compliance."],
+      en:["I was part of the team that built the credit card installment deferral module, used by thousands of customers, available in the mobile app (via integration) and in a web module exposed to external customers, under the bank's defined security.","I contributed to the credit card customer retention module, integrated with the bank's offer systems to reduce product cancellation.","I implemented, with the team, a microfrontend (MFE) architecture in Angular with Module Federation for an internal application, enabling modules to be developed and deployed independently across teams.","I developed microservices on AWS (ECS, EKS, Lambda, SQS, API Gateway) alongside the team, to improve and automate the bank's internal processes.","I worked under Scrum, taking part in the team's ceremonies; I developed APIs in Java and Node.js complying with financial regulations and integrated SonarCloud as a quality gate with JUnit and Jest.","I championed the use of AI assistants (GitHub Copilot, Claude and Cursor) within the team to speed up development and testing in a regulated banking environment, validating code against compliance standards."]
+    },
+    tl:{es:"Casi 3 años en banca, en equipo: módulos de tarjeta de crédito expuestos al cliente, microservicios en AWS y compliance financiero.",en:"Almost 3 years in banking, as a team: customer-facing credit card modules, AWS microservices and financial compliance."}
+  },
+  {
+    co:"Connect", from:2025.05, to:2026.45, color:"#E8A33D",
+    role:{es:"Desarrollador Full Stack Senior",en:"Senior Full Stack Developer"},
+    when:{es:"Mar 2025 – Actualidad · Bogotá",en:"Mar 2025 – Present · Bogotá"},
+    stack:"C# · .NET · React.js · Formik · Azure · AWS · SQL Server · MongoDB · Jest · Vitest · Cursor · GitHub Copilot · Claude",
+    bullets:{
+      es:["Como parte del equipo de desarrollo, contribuyo a un software de administración de pólizas de seguros vehiculares con trazabilidad completa de las reglas de cada póliza.","Aporto a la migración del sistema desde un monolito hacia una arquitectura de microservicios, modernizando la plataforma sin interrumpir la operación.","Desarrollo soluciones end-to-end (React.js + APIs en C#) en una mesa de trabajo Scrum, entregando historias de usuario y participando en las ceremonias del equipo.","Impulso herramientas de IA (Cursor, GitHub Copilot y Claude) en el flujo del equipo: generación de código, pruebas unitarias y revisión, acelerando entregas sin sacrificar calidad.","Trabajo con servicios de Azure (Functions, Logic Apps, App Services y Service Bus Topics) e integro aplicaciones .NET, complementando la experiencia del equipo en AWS; aseguro calidad con Jest/Vitest y revisión de pull requests."],
+      en:["As part of the development team, I contribute to vehicle insurance policy management software with full traceability of each policy's rules.","I contribute to migrating the system from a monolith to a microservices architecture, modernizing the platform without disrupting operations.","I build end-to-end solutions (React.js + C# APIs) in a Scrum team, delivering user stories and taking part in the team's ceremonies.","I champion AI tools (Cursor, GitHub Copilot and Claude) in the team's workflow: code generation, unit testing and review, speeding up delivery without sacrificing quality.","I work with Azure services (Functions, Logic Apps, App Services and Service Bus Topics) and integrate .NET applications, complementing the team's AWS experience; I ensure quality with Jest/Vitest and pull request reviews."]
+    },
+    tl:{es:"Mi rol actual, en equipo: software de pólizas de seguros y migración de monolito a microservicios, con C#, React, Azure y AWS.",en:"My current role, as a team: insurance policy software and monolith-to-microservices migration, with C#, React, Azure and AWS."}
+  }
+];
+
+/* ============ i18n ============ */
+const I18N = {
+  es:{
+    nav_career:"Trayectoria",nav_stack:"Stack",nav_exp:"Experiencia",nav_proj:"Proyectos",nav_contact:"Contacto",
+    hero_eyebrow:"Bogotá, Colombia · Disponible para presencial, híbrido o remoto",
+    hero_title:'Software bancario y empresarial, <span class="amber">en producción desde 2013.</span>',
+    hero_sub:"Soy Brian Acosta, desarrollador Full Stack Senior. Llevo 13 años trabajando en equipo para convertir historias de usuario en sistemas que operan a diario en bancos, software factories y empresas de producto: del front-end en React y Angular al back-end en C#, Java y Node.js, desplegado en AWS.",
+    cta_email:"Escríbeme",cta_cv:"Descargar CV",
+    tl_label:"2013 — 2026",tl_title:"Trece años en una sola línea",
+    tl_sub:"Cada bloque es una empresa real. Tócalo para ver qué construí ahí. Sin huecos laborales: de mantener sistemas legacy en 2013 a desplegar microservicios bancarios en la nube.",
+    st_title:"Herramientas con kilometraje real",
+    st_sub:"Nada de barras de progreso: cada tecnología listada aquí está respaldada por años de uso en proyectos productivos.",
+    st_db:"Datos",st_quality:"Calidad & Seguridad",st_method:"Metodologías",st_patterns:"Patrones de diseño",
+    st_ai:"IA aplicada al desarrollo",st_ai_tag:"Desarrollo asistido por IA",
+    ex_label:"Experiencia",ex_title:"Dónde y qué he construido",
+    pr_label:"Proyectos",pr_title:"Trabajo seleccionado",
+    pr_sub:"Una muestra de lo que he construido. Por confidencialidad bancaria y corporativa, describo el alcance y el stack sin exponer código propietario.",
+    ct_title:"¿Tu equipo necesita un full stack que ya pasó por banca?",
+    ct_sub:"Respondo rápido. Cuéntame del rol, el stack y el reto, y te digo con honestidad si soy la persona indicada.",
+    ft:"Brian Acosta · Bogotá, Colombia · Hecho a mano, sin plantillas.",
+    repo_err:"No pude cargar los repositorios en este momento. Visítalos directamente en github.com/acosta913.",
+    repo_view:"Ver en GitHub →"
+  },
+  en:{
+    nav_career:"Career",nav_stack:"Stack",nav_exp:"Experience",nav_proj:"Projects",nav_contact:"Contact",
+    hero_eyebrow:"Bogotá, Colombia · Open to on-site, hybrid or remote",
+    hero_title:'Banking and enterprise software, <span class="amber">in production since 2013.</span>',
+    hero_sub:"I'm Brian Acosta, a Senior Full Stack developer. For 13 years I've worked in teams to turn user stories into systems that run daily in banks, software factories and product companies: from React and Angular on the front-end to C#, Java and Node.js on the back-end, deployed on AWS.",
+    cta_email:"Email me",cta_cv:"Download résumé",
+    tl_label:"2013 — 2026",tl_title:"Thirteen years in a single line",
+    tl_sub:"Each block is a real company. Tap it to see what I built there. No employment gaps: from maintaining legacy systems in 2013 to deploying banking microservices in the cloud.",
+    st_title:"Tools with real mileage",
+    st_sub:"No progress bars: every technology listed here is backed by years of use in production projects.",
+    st_db:"Data",st_quality:"Quality & Security",st_method:"Methodologies",st_patterns:"Design patterns",
+    st_ai:"AI-powered development",st_ai_tag:"AI-assisted development",
+    ex_label:"Experience",ex_title:"Where and what I've built",
+    pr_label:"Projects",pr_title:"Selected work",
+    pr_sub:"A sample of what I've built. Due to banking and corporate confidentiality, I describe scope and stack without exposing proprietary code.",
+    ct_title:"Does your team need a full stack dev with banking experience?",
+    ct_sub:"I reply fast. Tell me about the role, the stack and the challenge, and I'll tell you honestly if I'm the right fit.",
+    ft:"Brian Acosta · Bogotá, Colombia · Handmade, no templates.",
+    repo_err:"Couldn't load repositories right now. Visit them directly at github.com/acosta913.",
+    repo_view:"View on GitHub →"
+  }
+};
+
+let lang = 'es';
+function setLang(l){
+  lang = l;
+  document.documentElement.lang = l;
+  try{ localStorage.setItem('ba_lang', l); }catch(e){}
+  document.getElementById('btn-es').classList.toggle('on', l==='es');
+  document.getElementById('btn-en').classList.toggle('on', l==='en');
+  document.getElementById('btn-es').setAttribute('aria-pressed', l==='es');
+  document.getElementById('btn-en').setAttribute('aria-pressed', l==='en');
+  document.title = l==='en'
+    ? 'Brian Acosta — Senior Full Stack Developer | React, Angular, .NET, Java, AWS'
+    : 'Brian Acosta — Desarrollador Full Stack Senior | React, Angular, .NET, Java, AWS';
+  document.querySelectorAll('[data-i18n]').forEach(el=>{ const k=el.getAttribute('data-i18n'); if(I18N[l][k]) el.textContent=I18N[l][k]; });
+  document.querySelectorAll('[data-i18n-html]').forEach(el=>{ const k=el.getAttribute('data-i18n-html'); if(I18N[l][k]) el.innerHTML=I18N[l][k]; });
+  renderJobs(); renderTimeline(activeSeg); renderFeatured();
+}
+
+/* ============ Timeline firma ============ */
+const START=2013.1, END=2026.45;
+let activeSeg = JOBS.length-1;
+function buildTrack(){
+  const track=document.getElementById('track');
+  track.innerHTML='';
+  JOBS.forEach((j,i)=>{
+    const w=((j.to-j.from)/(END-START))*100;
+    const seg=document.createElement('button');
+    seg.className='seg'+(i===activeSeg?' active':'');
+    seg.style.width=w+'%';
+    seg.style.background=j.color;
+    seg.style.border='none';
+    seg.setAttribute('role','tab');
+    seg.setAttribute('aria-label',j.co);
+    seg.innerHTML='<span>'+j.co+'</span>';
+    seg.onclick=()=>{activeSeg=i;buildTrack();renderTimeline(i);};
+    track.appendChild(seg);
+  });
+}
+function renderTimeline(i){
+  const j=JOBS[i];
+  document.getElementById('sd-title').textContent=j.co;
+  document.getElementById('sd-meta').textContent=j.role[lang]+' · '+j.when[lang];
+  document.getElementById('sd-desc').textContent=j.tl[lang];
+}
+
+/* ============ Experiencia ============ */
+function renderJobs(){
+  const list=[...JOBS].reverse();
+  document.getElementById('jobs').innerHTML=list.map(j=>`
+    <div class="job">
+      <div class="job-when">${j.when[lang]}</div>
+      <div>
+        <h3>${j.role[lang]} · <span class="co">${j.co}</span></h3>
+        <p class="stack-line">${j.stack}</p>
+        <ul>${j.bullets[lang].map(b=>'<li>'+b+'</li>').join('')}</ul>
+      </div>
+    </div>`).join('');
+}
+
+/* ============ Proyectos curados (EDITA AQUÍ) ============
+   Reemplaza estos ejemplos por tus mejores proyectos reales.
+   - title: nombre del proyecto o sistema
+   - desc:  qué problema resolvía y tu rol (1-2 frases). Sin exponer datos confidenciales.
+   - stack: tecnologías clave separadas por " · "
+   - link:  (opcional) URL a repo, demo o caso. Si lo dejas vacío, la tarjeta no será clicable.
+*/
+const FEATURED = [
+  {
+    title:{es:"Diferido de cuotas de tarjeta de crédito", en:"Credit card installment deferral"},
+    desc:{
+      es:"Módulo que permite a miles de clientes diferir las cuotas de su tarjeta de crédito de forma autónoma, disponible tanto en la app móvil del banco (vía integración) como en un módulo web expuesto al cliente externo. Lo construimos como equipo bajo metodología Scrum, sobre la seguridad y las políticas definidas por la entidad financiera.",
+      en:"A module that lets thousands of customers defer their credit card installments on their own, available both in the bank's mobile app (via integration) and through a web module exposed to external customers. Built as a team under Scrum, on the security and policies defined by the financial institution."
+    },
+    stack:"React.js · Java · Node.js · AWS · REST · Auth0 / JWT",
+    link:""
+  },
+  {
+    title:{es:"Retención de clientes de tarjeta de crédito", en:"Credit card customer retention"},
+    desc:{
+      es:"Módulo de retención que conecta a los clientes con ofertas definidas por el banco en el momento oportuno, integrándose con los sistemas de ofertas de la entidad para reducir la cancelación de productos. Desarrollado en equipo bajo los estándares de seguridad y compliance del sector financiero.",
+      en:"A retention module that connects customers with bank-defined offers at the right moment, integrating with the institution's offer systems to reduce product cancellation. Developed as a team under financial-sector security and compliance standards."
+    },
+    stack:"React.js · Angular · Java · AWS · Integraciones REST · JWT",
+    link:""
+  },
+  {
+    title:{es:"Mejora de procesos internos del banco", en:"Internal banking process improvements"},
+    desc:{
+      es:"Optimización y automatización de procesos internos del banco mediante microservicios en AWS (ECS, EKS, Lambda, SQS, API Gateway), trabajando en equipo para elevar la eficiencia operativa con calidad asegurada por SonarCloud y pruebas automatizadas, dentro de un entorno regulado.",
+      en:"Optimization and automation of internal banking processes through microservices on AWS (ECS, EKS, Lambda, SQS, API Gateway), working as a team to improve operational efficiency with quality enforced by SonarCloud and automated testing, within a regulated environment."
+    },
+    stack:"Java · Node.js · AWS ECS/EKS/Lambda · SQS · SonarCloud · PostgreSQL",
+    link:""
+  },
+  {
+    title:{es:"Microfrontends en Angular (Module Federation)", en:"Angular microfrontends (Module Federation)"},
+    desc:{
+      es:"Implementación de una arquitectura de microfrontends (MFE) en Angular con Module Federation para una aplicación interna del banco, permitiendo que distintos equipos desarrollen y desplieguen sus módulos de forma independiente. Trabajo realizado en equipo bajo metodología Scrum.",
+      en:"Implementation of a microfrontend (MFE) architecture in Angular with Module Federation for an internal banking application, letting different teams develop and deploy their modules independently. Built as a team under Scrum."
+    },
+    stack:"Angular · Module Federation · TypeScript · Microfrontends · AWS",
+    link:""
+  },
+  {
+    title:{es:"Administración de pólizas de seguros vehiculares", en:"Vehicle insurance policy management"},
+    desc:{
+      es:"Software de administración de pólizas de seguros para vehículos con trazabilidad completa de las reglas de cada póliza. Como parte del equipo de desarrollo, aporto a la migración del sistema desde un monolito hacia una arquitectura de microservicios, modernizando la plataforma sin interrumpir la operación.",
+      en:"Vehicle insurance policy management software with full traceability of each policy's rules. As part of the development team, I contribute to migrating the system from a monolith to a microservices architecture, modernizing the platform without disrupting operations."
+    },
+    stack:"C# / .NET · React.js · Azure (Functions, Logic Apps, App Services, Topics) · AWS · SQL Server · MongoDB",
+    link:""
+  }
+];
+
+function renderFeatured(){
+  const grid=document.getElementById('repos');
+  const note=document.getElementById('repo-note');
+  note.textContent='';
+  grid.innerHTML=FEATURED.map(p=>{
+    const inner=`
+      <h3>${p.title[lang]}</h3>
+      <p>${p.desc[lang]}</p>
+      <div class="lang-row"><span class="lang-dot"></span>${p.stack}${p.link?'<span style="margin-left:auto">'+I18N[lang].repo_view+'</span>':''}</div>`;
+    return p.link
+      ? `<a class="repo" href="${p.link}" target="_blank" rel="noopener">${inner}</a>`
+      : `<div class="repo">${inner}</div>`;
+  }).join('');
+}
+
+/* ============ Reveal on scroll ============ */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+buildTrack();
+renderTimeline(activeSeg);
+renderJobs();
+renderFeatured();
+document.getElementById('year-line').textContent = '© ' + new Date().getFullYear() + ' Brian Acosta';
+
+/* ============ Idioma inicial: preferencia guardada o navegador ============ */
+(function initLang(){
+  let saved=null;
+  try{ saved=localStorage.getItem('ba_lang'); }catch(e){}
+  const nav=(navigator.language||'es').toLowerCase();
+  const initial = saved || (nav.startsWith('en')?'en':'es');
+  if(initial==='en'){ setLang('en'); }
+})();
+</script>
+</body>
+</html>
