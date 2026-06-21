@@ -179,7 +179,7 @@
       <a class="btn btn-amber" href="mailto:acostapaez913@gmail.com" data-i18n="cta_email">Escríbeme</a>
       <a class="btn btn-ghost" href="https://linkedin.com/in/brian-acosta" target="_blank" rel="noopener">LinkedIn</a>
       <a class="btn btn-ghost" href="https://github.com/acosta913" target="_blank" rel="noopener">GitHub</a>
-      <a class="btn btn-ghost" href="CV-Brian-Acosta-ATS.pdf" download data-i18n="cta_cv">Descargar CV</a>
+      <a class="btn btn-ghost" id="cv-link" href="CV-Brian-Acosta-ATS.pdf" download data-i18n="cta_cv">Descargar CV</a>
     </div>
   </div>
 </header>
@@ -369,6 +369,8 @@ function setLang(l){
   document.title = l==='en'
     ? 'Brian Acosta — Senior Full Stack Developer | React, Angular, .NET, Java, AWS'
     : 'Brian Acosta — Desarrollador Full Stack Senior | React, Angular, .NET, Java, AWS';
+  const cv=document.getElementById('cv-link');
+  if(cv) cv.setAttribute('href', l==='en' ? 'CV-Brian-Acosta-EN.pdf' : 'CV-Brian-Acosta-ATS.pdf');
   document.querySelectorAll('[data-i18n]').forEach(el=>{ const k=el.getAttribute('data-i18n'); if(I18N[l][k]) el.textContent=I18N[l][k]; });
   document.querySelectorAll('[data-i18n-html]').forEach(el=>{ const k=el.getAttribute('data-i18n-html'); if(I18N[l][k]) el.innerHTML=I18N[l][k]; });
   renderJobs(); renderTimeline(activeSeg); renderFeatured();
